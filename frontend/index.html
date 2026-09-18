@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sign in · Arise Bank</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="auth-shell">
+  <div class="auth-brand">
+    <div class="brand"><B>ARISE</B></div>
+    <div>
+      <p class="tagline">Every rupee, accounted for — a clear ledger of your accounts and transfers.</p>
+    </div>
+    <p class="foot-note">A full-stack academic project built with Spring Boot, JDBC and MySQL on the backend, and plain HTML, CSS and JavaScript on the frontend.</p>
+  </div>
+
+  <div class="auth-form-side">
+    <form class="auth-form" id="loginForm" novalidate>
+      <h1>Welcome back</h1>
+      <p class="sub">Sign in to view your accounts and transactions.</p>
+
+      <div class="alert" id="alertBox"></div>
+
+      <div class="field">
+        <label for="usernameOrEmail">Username or email</label>
+        <input type="text" id="usernameOrEmail" required autocomplete="username" />
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" required autocomplete="current-password" />
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="loginBtn">Sign in</button>
+
+      <p class="auth-switch">New here? <a href="register.html">Create an account</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

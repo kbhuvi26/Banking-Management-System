@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard · Ledgerly Bank</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">Ledger<span>ly</span></div>
+    <nav>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="account.html">Accounts</a>
+      <a href="transactions.html">Transactions</a>
+    </nav>
+    <div class="user-chip">
+      <strong id="sidebarName">—</strong>
+      <span id="sidebarEmail">—</span>
+      <button class="logout-btn" onclick="logout()">Log out</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page-head">
+      <h1>Dashboard</h1>
+      <p class="sub">A snapshot of your accounts and recent activity.</p>
+    </div>
+
+    <div class="panel">
+      <div class="stat-row" id="statRow">
+        <p class="loading-text">Loading your details…</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Your accounts</h2>
+      <p class="panel-sub">Every bank account linked to your profile.</p>
+      <div class="grid-2" id="accountsGrid">
+        <p class="loading-text">Loading accounts…</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Recent transactions</h2>
+      <p class="panel-sub" id="recentSub">Latest activity on your first account.</p>
+      <div class="ledger" id="recentLedger">
+        <p class="loading-text">Loading transactions…</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

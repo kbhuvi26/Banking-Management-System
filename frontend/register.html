@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Create account · Ledgerly Bank</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="auth-shell">
+  <div class="auth-brand">
+    <div class="brand">Ledger<span>ly</span></div>
+    <div>
+      <p class="tagline">Open an account in a minute. No paperwork, no queues.</p>
+    </div>
+    <p class="foot-note">Your details are stored in a MySQL database and your password is hashed before it is saved — it is never kept in plain text.</p>
+  </div>
+
+  <div class="auth-form-side">
+    <form class="auth-form" id="registerForm" novalidate>
+      <h1>Create your account</h1>
+      <p class="sub">A few details and you're set.</p>
+
+      <div class="alert" id="alertBox"></div>
+
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" required />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" required autocomplete="email" />
+      </div>
+
+      <div class="field">
+        <label for="phoneNumber">Phone number</label>
+        <input type="tel" id="phoneNumber" required />
+      </div>
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" required autocomplete="username" />
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" required autocomplete="new-password" />
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="registerBtn">Create account</button>
+
+      <p class="auth-switch">Already have an account? <a href="index.html">Sign in</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
