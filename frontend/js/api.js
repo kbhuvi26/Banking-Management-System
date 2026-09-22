@@ -10,7 +10,7 @@
  *     there. This keeps the frontend 100% plain HTML/CSS/JS as required.
  */
 
-const API_BASE = 'http://localhost:8080/api';
+const API_BASE = 'https://banking-management-system-production-a580.up.railway.app/api';
 
 async function apiRequest(path, { method = 'GET', body } = {}) {
   const options = {
